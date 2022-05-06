@@ -15,7 +15,7 @@ function Header() {
               <Link href='/'>Início</Link>
             </Styled.Navlink>
             <Styled.Navlink>
-              <Link href='/'>Fast Fashion</Link>
+              <Link href='/fast-fashion'>Fast Fashion</Link>
             </Styled.Navlink>
             <Styled.Navlink>
               <Link href='/'>Desfiles</Link>
