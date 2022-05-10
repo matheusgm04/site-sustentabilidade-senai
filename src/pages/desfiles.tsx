@@ -1,8 +1,63 @@
+import Image from 'next/image'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Navigation } from 'swiper'
 import PageTitle from '../components/PageTitle'
 import TextContainer from '../components/TextContainer'
 import * as Styled from '../styles/pages/desflies'
 
+SwiperCore.use([Navigation])
+
 function Desfiles() {
+  const items = [
+    {
+      id: 1,
+      content:
+        'Integrar a sustentabilidade ao design e à produção de todos os eventos de moda',
+    },
+    {
+      id: 2,
+      content: 'Eliminar o plástico descartável e instalar fontes de água',
+    },
+    {
+      id: 3,
+      content:
+        'Fazer upcycling e redistribuir para dar uma segunda vida à decoração e aos materiais',
+    },
+    {
+      id: 4,
+      content: 'Reutilizar materiais durante toda a produção',
+    },
+    {
+      id: 5,
+      content: 'Classificar e reciclar resíduos',
+    },
+    {
+      id: 6,
+      content: 'Minimizar o uso de combustíveis fósseis',
+    },
+    {
+      id: 7,
+      content: 'Viajar com eficiência e reduzir vôos não essenciais',
+    },
+    {
+      id: 8,
+      content: 'Implementar compensação operacional de carbono',
+    },
+    {
+      id: 9,
+      content: ' Doar 1% por cento em prol o planeta',
+    },
+    {
+      id: 10,
+      content:
+        'Oferecer refeições responsáveis e minimizar o desperdício de alimentos',
+    },
+  ]
+
   return (
     <>
       <PageTitle>Desfiles</PageTitle>
@@ -43,6 +98,55 @@ function Desfiles() {
           plásticos de uso único zero, reciclagem de 100% dos resíduos de
           eventos e redução de 25% de suas emissões de CO2 até 2022.
         </TextContainer>
+        <Styled.PageContainer>
+          <Styled.Row>
+            <Styled.ListTitle>Bureau e os 10 mandamentos</Styled.ListTitle>
+            <Styled.ContentList>
+              {items.map((item) => (
+                <Styled.ListItem key={item.id}>
+                  <span>
+                    {item.id.toLocaleString('pt-BR', {
+                      minimumIntegerDigits: 2,
+                    })}
+                  </span>
+                  {item.content}
+                </Styled.ListItem>
+              ))}
+            </Styled.ContentList>
+            <Styled.ImagesCarousel>
+              <Swiper slidesPerView={1} centeredSlides navigation>
+                <SwiperSlide>
+                  <Image
+                    width={500}
+                    height={500}
+                    src='/assets/images/carousel-1.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={500}
+                    height={500}
+                    src='/assets/images/carousel-2.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={500}
+                    height={500}
+                    src='/assets/images/carousel-3.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={500}
+                    height={500}
+                    src='/assets/images/carousel-4.svg'
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </Styled.ImagesCarousel>
+          </Styled.Row>
+        </Styled.PageContainer>
       </Styled.PageContent>
     </>
   )
