@@ -114,7 +114,7 @@ function Desfiles() {
               ))}
             </Styled.ContentList>
             <Styled.ImagesCarousel>
-              <Swiper slidesPerView={1} centeredSlides navigation>
+              <Swiper slidesPerView={1} navigation>
                 <SwiperSlide>
                   <Image
                     width={500}
@@ -145,6 +145,78 @@ function Desfiles() {
                 </SwiperSlide>
               </Swiper>
             </Styled.ImagesCarousel>
+          </Styled.Row>
+          <Styled.Row>
+            <Styled.DesfileTitle>
+              Saint Laurent - Primavera Verão 2020, Praias de Malibu
+            </Styled.DesfileTitle>
+            <Styled.DesfileCarousel>
+              <Swiper slidesPerView='auto' navigation spaceBetween={36}>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-5.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-6.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-7.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-8.svg'
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </Styled.DesfileCarousel>
+            <Styled.DesfileTitle>
+              Jacquemus - Primavera Verão 2020, Sul da França
+            </Styled.DesfileTitle>
+            <Styled.DesfileCarousel>
+              <Swiper slidesPerView='auto' navigation spaceBetween={36}>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-9.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-10.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-11.svg'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    width={176}
+                    height={264}
+                    src='/assets/images/carousel-12.svg'
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </Styled.DesfileCarousel>
           </Styled.Row>
         </Styled.PageContainer>
       </Styled.PageContent>

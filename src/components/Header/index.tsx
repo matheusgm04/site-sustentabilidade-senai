@@ -21,7 +21,7 @@ function Header() {
               <Link href='/desfiles'>Desfiles</Link>
             </Styled.Navlink>
             <Styled.Navlink>
-              <Link href='/'>Upcycling na moda</Link>
+              <Link href='/upcycling'>Upcycling na moda</Link>
             </Styled.Navlink>
           </Styled.Navbar>
         </Styled.HeaderContent>

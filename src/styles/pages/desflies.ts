@@ -73,6 +73,8 @@ export const ImagesCarousel = styled.div`
   .swiper-slide {
     display: flex;
     justify-content: center;
+
+    width: auto;
   }
 
   .swiper-button-prev {
@@ -92,5 +94,23 @@ export const ImagesCarousel = styled.div`
   @media screen and (max-width: 1000px) {
     width: 100%;
     padding-left: 0;
+  }
+`
+
+export const DesfileTitle = styled.div`
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.875rem;
+`
+
+export const DesfileCarousel = styled.div`
+  width: 100%;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+
+    width: auto;
   }
 `

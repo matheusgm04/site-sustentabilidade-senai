@@ -10,4 +10,10 @@ export const ImageRow = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 2rem auto;
+
+  flex-wrap: wrap;
+
+  div {
+    margin-bottom: 2rem;
+  }
 `
